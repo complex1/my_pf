@@ -10,6 +10,11 @@
       <h1>Hi,</h1>
       <h3>i'm shubham maurya,</h3>
       <h4>Web Developer </h4>
+      <p>
+        <small>
+          design and code beautifully simple things, and I love what I do.
+        </small>
+      </p>
     </div>
     <div class="clip">
       <small>If you think math is hard, try web design.</small>
