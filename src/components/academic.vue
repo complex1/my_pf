@@ -79,7 +79,113 @@ export default {
   color: #ffffff;
   box-shadow: 0px 0px 20px #5d5d5d;
 }
+
 .top-p-card-l {
+  background: #ff99c8;
+}
+.top-p-card-r {
+  background: #e4c1f9;
+}
+.mid-p-card-l {
+  background: #90e0ef;
+}
+.mid-p-card-r {
+  background: #a9def9;
+}
+.bottom-p-card-l {
+  background: #ffac81;
+}
+.bottom-p-card-r {
+  background: #fec3a6;
+}
+.top-p-card-l::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #ff99c8;
+  border-radius: 50%;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2 !important;
+}
+.top-p-card-r::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #e4c1f9;
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2 !important;
+}
+
+.mid-p-card-l::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #90e0ef;
+  border-radius: 50%;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2 !important;
+}
+.mid-p-card-l::after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #90e0ef;
+  border-radius: 50% !important;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2 !important;
+}
+.mid-p-card-r::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #a9def9;
+  border-radius: 50%;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2 !important;
+}
+
+.bottom-p-card-l::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #ffac81;
+  border-radius: 50%;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2 !important;
+}
+.bottom-p-card-r::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #fec3a6;
+  border-radius: 50%;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2 !important;
+}
+
+/* .top-p-card-l {
   background: #ade8f4;
 }
 .top-p-card-r {
@@ -92,7 +198,7 @@ export default {
   background: #00b4d8;
 }
 .bottom-p-card-l {
-  background: #23b2d0;
+  background: #e4c1f9;
 }
 .bottom-p-card-r {
   background: #17a5c1;
@@ -182,5 +288,5 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2 !important;
-}
+} */
 </style>

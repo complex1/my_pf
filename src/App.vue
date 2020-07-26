@@ -1,14 +1,16 @@
 <template>
   <div id="app" class="container">
-    <Scrollama @step-enter="stepEnterHandler">
+    <Scrollama @step-enter="stepEnterHandler" :offset='0.35' >
       <div data-step="a">
-        <intro class="step1" v-show="true"/>
+        <intro v-show="true"/>
       </div>
-      <p class="edu" :class="index !== 1 ? '' : 'hide'">EDUCATION</p>
-      <div data-step="b" style="height: 500px">
-        <academic ref="academic" v-if="index === 1" class="step2"/>
+      <div data-step="b" >
+        <p class="edu" >EDUCATION</p>
+        <academic v-if="index > 0" />
       </div>
-      <div data-step="b" style="height: 500px">
+      <div data-step="b" >
+        <p class="edu">SKILLS</p>
+        <skills v-if="index > 1" />
       </div>
       <div data-step="b" style="height: 500px">
       </div>
@@ -32,18 +34,32 @@ export default {
   components: {
     Scrollama,
     intro: () => import('./components/intero'),
-    academic: () => import('./components/academic')
+    academic: () => import('./components/academic'),
+    skills: () => import('./components/skills')
   },
    methods: {
     stepEnterHandler (e) {
       this.index = e.index
     }
+   },
+   mounted () {
+     setTimeout(() => this.index = 0, 100)
    }
 }
 </script>
 
 <style>
 @import './assets/main.css';
+*{
+  box-sizing: border-box !important; 
+}
+.local {
+  font-size: 20px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1000;
+}
 .edu {
   font-size: 100px;
   text-align: center;
@@ -51,6 +67,7 @@ export default {
   color: #c3c3c3;
   display: block;
   transition: display 1s;
+  margin-top: 20px;
 }
 .edu.hide {
   display: none;
