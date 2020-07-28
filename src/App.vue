@@ -13,6 +13,8 @@
         <skills v-if="index > 1" />
       </div>
       <div data-step="b" style="height: 500px">
+        <p class="edu">TECHNOLOGY</p>
+        <tech v-if="index > 2" />
       </div>
       <div data-step="b" style="height: 500px">
       </div>
@@ -35,7 +37,8 @@ export default {
     Scrollama,
     intro: () => import('./components/intero'),
     academic: () => import('./components/academic'),
-    skills: () => import('./components/skills')
+    skills: () => import('./components/skills'),
+    tech: () => import('./components/tech')
   },
    methods: {
     stepEnterHandler (e) {
@@ -43,7 +46,8 @@ export default {
     }
    },
    mounted () {
-     setTimeout(() => this.index = 0, 100)
+     setTimeout(() => {this.index = 0}, 100)
+     setTimeout(() => window.scroll(0,0), 1000)
    }
 }
 </script>
