@@ -1,6 +1,22 @@
+@media (max-width: 576px) {
+    .container {
+    }
+    .mobile {
+        display: block;
+    }
+    .noMobile {
+        display: none;
+    }
+}
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+    .mobile {
+        display: block;
+    }
+    .noMobile {
+        display: none;
     }
 }
 
@@ -8,17 +24,35 @@
     .container {
         max-width: 720px;
     }
+    .mobile {
+        display: block;
+    }
+    .noMobile {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
+    .mobile {
+        display: none;
+    }
+    .noMobile {
+        display: block;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+    .mobile {
+        display: none;
+    }
+    .noMobile {
+        display: block;
     }
 }
 

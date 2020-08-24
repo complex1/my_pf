@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <Scrollama @step-enter="stepEnterHandler" :offset='0.35' >
+    <Scrollama class="noMobile" @step-enter="stepEnterHandler" :offset='0.35' >
       <div data-step="a">
         <intro v-show="true"/>
       </div>
@@ -26,6 +26,19 @@
       </div>
     </Scrollama>
     <div style="height: 80vh"></div>
+    <div class="mobile">
+      <intro />
+      <p class="edu" >EDUCATION</p>
+      <academic  />
+      <p class="edu">SKILLS</p>
+      <skills />
+      <p class="edu">TECHNOLOGY</p>
+      <tech />
+      <p class="edu">PROJECTS</p>
+      <projects />
+      <p class="edu">HOBBY</p>
+      <moonwalk />
+    </div>
   </div>
 </template>
 
