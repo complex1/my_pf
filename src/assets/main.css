@@ -28,7 +28,6 @@
     padding-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
-    height: 1000vh;
 }
 
 body,
@@ -39,6 +38,8 @@ html {
     font-weight: 300;
     background: #e8e8e8;
     font-style: normal;
+    background-image: url('./bg.jpg');
+    background-size: contain;
 }
 
 h1,

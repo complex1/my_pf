@@ -12,13 +12,20 @@
         <p class="edu">SKILLS</p>
         <skills v-if="index > 1" />
       </div>
-      <div data-step="b" style="height: 500px">
+      <div data-step="b" >
         <p class="edu">TECHNOLOGY</p>
         <tech v-if="index > 2" />
       </div>
-      <div data-step="b" style="height: 500px">
+      <div data-step="b" >
+        <p class="edu">PROJECTS</p>
+        <projects v-if="index > 3" />
+      </div>
+      <div data-step="b" >
+        <p class="edu">HOBBY</p>
+        <moonwalk v-if="index > 4" />
       </div>
     </Scrollama>
+    <div style="height: 80vh"></div>
   </div>
 </template>
 
@@ -38,7 +45,9 @@ export default {
     intro: () => import('./components/intero'),
     academic: () => import('./components/academic'),
     skills: () => import('./components/skills'),
-    tech: () => import('./components/tech')
+    tech: () => import('./components/tech'),
+    projects: () => import('./components/projects'),
+    moonwalk: () => import('./components/moonwalk')
   },
    methods: {
     stepEnterHandler (e) {
