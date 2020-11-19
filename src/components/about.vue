@@ -2,9 +2,9 @@
   <div class="about container">
     <div class=" about-me n-alert n-alert-in n-alert-danger">
       A highly gifted information technology expert with focus on front-end and user
-      experience development desires to work with Quinbay as a Web Developer to
+      experience development, currently working with Quinbay as a Web Developer to
       contribute in creating extraordinary experience for company’s technical audience.
-      Bringing {{getExp}} development experience working in team environment writing and
+      Having {{getExp}} development experience working in team environment writing and
       reviewing code daily.
     </div>
     <h1 class=" headers-stick n-text n-text-0">
